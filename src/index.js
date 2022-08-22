@@ -58,7 +58,9 @@ function countriesList(countries) {
  
     const markup = countries.map(country => {
         
-        return `<li class='countries-item'><img src='${country.flags.svg}' width='50' height ='30'><h2 class='countries-header'>${country.name.official}</h2></li>`
+        return `<li class='countries-item'><img src='${country.flags.svg}' width='50' height ='30'>
+        <h2 class='countries-header'>${country.name.official}</h2>
+        </li>`
     }).join('');
    
 refs.list.insertAdjacentHTML('beforeend', markup);
